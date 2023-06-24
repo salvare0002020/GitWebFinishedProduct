@@ -1,0 +1,41 @@
+Git https://ja.wikipedia.org/wiki.git
+
+利点
+◎開発を並行できる
+◎バージョン管理(履歴の管理)ができる
+
+コマンド
+git --version：gitのバージョンを確認
+git config --global：全体的な設定
+git config --global user.name ユーザ名：ユーザ名の登録
+git config --global user.email メール名：メアドの登録
+
+dir：今の階層に何があるかわかる(Linuxだと ls)
+cd パス名：パス名に移動できる 
+git init：gitの管理対象にする
+git status：現状を確認
+git add：ファイルを管理する
+git diff：ファイルを比較する
+git reset ：変更を取り下げる
+リポジトリ：ファイルを格納する倉庫(殿堂入り)
+commit：ステージされたものをcommitすると，リポジトリになる
+git commit(Linuxだとviコマンド)
+git add ファイル名→git commit
+git log：logができる(-pと打てばすべてのlogが見れる)
+.gitignore：管理ファイルで，ファイル名を打てばgitの管理対象にならない
+      .gitignoreにファイル名を入れると，そのファイルはgit statusで，出てこない
+git checkout -- ファイル名：ファイル名をもとの状態に戻す
+git rm ファイル名：ファイルをもとの状態に戻す
+      ※gitはLinux系なので，パスの区切りは "/" で行う      (例)練習１/C.txt
+git remote add origin https://github.com/shui-ikeda/Git-Practice.git：リモートレポジトリに接続
+git push origin master：gitに接続
+
+
+git →→→→→→→→→→ ステージ →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ ローカルレポジトリ →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→ リモートレポジトリ(github)
+      git add	        	      git commit						git push origin master
+git pull origin master(main)：リモートレポジトリからローカルレポジトリにファイルを持ってくる
+git pull origin master(main) → git checkout ファイル名：ファイル名をローカルに戻し，変更を反映する
+git fork：リモートレポジトリのコピーを作る
+      ※github上に "fork" というコマンドがある
+git pullは，git fetchとgit mergeを同時に行う機能を持っている
+CONFLICT：１個のファイルを複数で編集しているので，バッティングしてしまうこと(重なること)

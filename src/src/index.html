@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>タイトル</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <h1>６班<br>
+        
+</body>
+</html>
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Group6</title>
+</head>
+<body>    
+    <h1>
+        グループ６のみんなのページです<br>
+        メンバー一覧<br>
+        ・池田<br>
+        ・島田<br>
+        ・妹尾<br>
+        ・平松<br>
+        ・西田<br>
+    </h1>
+    <h2>
+        <li><a href =".html">池田ページ<br></a></li>
+        <li><a href = "shimada.html">島田ページ<br></a></li>
+        <li><a href = "妹尾康太郎.html">妹尾ページ<br></a></li>
+        <li><a href = "hiramatu.html">平松ページ<br></a></li>
+        <li><a href = "Nishida.html">西田ページ<br></a></li>
+    </h2>
+    <script src="app.js"></script>
+</body>
+<head>
+  
+  <title>おみくじ</title>
+  <style>
+    .fortune-wrapper {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+    <!--クリック数表示-->
+    <div class="ClickMe">
+      <button id="clickButton">Click Me</button>
+      <p id="clickCount">クリックした数: 0</p>
+      <button id ="resetButton">Count Reset</button>
+      
+    </div>
+    <div id="clock"></div>
+
+  <script>
+    function updateClock() {
+      const clockElement = document.getElementById("clock");
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+      const timeString = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+      clockElement.textContent = timeString;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+    <script>
+const clickButton = document.getElementById('clickButton');
+const resetButton = document.getElementById('resetButton');
+const clickCountElement = document.getElementById('clickCount');
+
+let clickCount = 0;
+
+clickButton.addEventListener('click', function() {
+  clickCount++;
+  clickCountElement.textContent = `クリックした数: ${clickCount}`;
+});
+
+resetButton.addEventListener('click', function() {
+  clickCount = 0;
+  clickCountElement.textContent = `クリックした数: ${clickCount}`;
+});
+
+    </script>
+</body>
+<body>
+  <div class="fortune-wrapper">
+    <h1>おみくじ</h1>
+    <button onclick="drawFortune()">おみくじを引く</button>
+    <p id="fortune-result"></p>
+  </div>
+
+  <script>
+    function drawFortune() {
+      var fortunes = [
+        "大吉",
+        "中吉",
+        "小吉",
+        "吉",
+        "末吉",
+        "凶",
+        "大凶"
+      ];
+
+      var randomIndex = Math.floor(Math.random() * fortunes.length);
+      var fortune = fortunes[randomIndex];
+
+      var resultElement = document.getElementById("fortune-result");
+      resultElement.textContent = "今日の運勢は「" + fortune + "」です！";
+    }
+  </script>
+</body>
+</html>

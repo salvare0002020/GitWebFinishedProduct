@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>平松永侍さんのHP</title>
+  <style>
+    body {
+      background-color: white; /* 初期の背景色 */
+    }
+    
+     li{
+     font-size:30px;
+     list-style: none;
+    }
+    
+    h1 {
+     background: pink;/*背景色*/
+     text-align: center
+     }
+     
+    .center {
+    text-align: center;
+    }
+    
+   p {
+     font-size: 200%;
+    }
+   li.pongin{
+    padding-right: 40px;
+    }
+    .pongin2{
+    padding-right: 40px;
+   
+   }
+   
+  
+  </style>
+  
+  <script>
+  function changeBackgroundColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      document.body.style.backgroundColor = color;
+    }
+    
+  </script>
+</head>
+<div class="hira">
+<body>
+  <div class="center">
+  <button onclick="changeBackgroundColor()">背景を変更</button>
+  <font face="fantasy"><h1>HIRAMATSU's profile</h1></font><br/>
+  
+  <font face="fantasy"><li>MADE:SHIMADA</li></font><br/>
+  <font face="fantasy"><h2>basic information</h2></font><br/>
+  <ul>
+    <font face="fantasy"><li class="pongin2">NAMEEIJIHIRAMATSU</li></font><br/>
+    <font face="fantasy"><li class="pongin">AGE：19</li></font><br/>
+  </ul>
+  <font face="fantasy"><h2>HOBBY</h2></font><br/>
+  <font face="fantasy"><p>reading</p></font><br/>
+  <font face="fantasy"><h2>favorite subject</h2></font><br/>
+  <font face="fantasy"><p>JAVA</p></font><br/>
+  <font face="fantasy"><h2>Favorite food</h2></font><br/>
+  <font face="fantasy"><p>mother's meal</p></font><br/>
+  <font face="fantasy"><h2>job hunting policy</h2></font><br/>
+  <font face="fantasy"><p>join internship</p></font><br/>
+  <img src="hirahira.jpg" alt="hira"title="This is 平松永侍" width="300">
+  <br>
+  <p class"text text-center"><a href="ikeda.html">池田</a></p>
+  <p class"text text-center"><a href="senoukoutarou.html">妹尾</a></p>
+  <p class"text text-center"><a href="Nishida.html">西田</a></p>
+  <p class"text text-center"><a href="shimada.html">島田</a></p>
+   <script src="hira.js"></script>
+  
+</body>
+</div>
+</html>

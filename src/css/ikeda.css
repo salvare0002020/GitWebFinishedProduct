@@ -1,0 +1,97 @@
+/*フォントの設定*/
+/*エムゴの定義*/
+@font-face{
+    font-family: GenEiMGothic2-Regular;
+    src: url(../source/GenEiMGothic_v2.0/GenEiMGothic2-Regular.ttf) format('truetype');
+}
+/*使用するフォントの指定*/
+body{
+    font-family: GenEiMGothic2-Regular, Arial, sans-serif;
+}
+
+/*全体*/
+ul{
+    list-style-type: none;
+}
+
+/*header*/
+.main_menu ul{
+    display: flex;
+    padding: 10px;
+}
+.main_menu ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*ドロップダウンメニュー*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    list-style-type: none;
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 16px;
+  }
+  
+  .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+  }
+  .dropdown .dropdown-menu{
+    display: none;;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+.name{
+  text-align: center;
+}
+
+
+/*body*/
+
+
+
+    /*header*/
+    /*main*/
+      /*レイアウト*/
+      .contents{
+        display: flex;
+        align-items: center;
+      }
+      .image{
+        flex: 0 0 auto;
+        margin-right: 10px; /* 画像とテキストの間隔 */
+      }
+      .data{
+        flex: 1;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .data li{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+      }
+      .image-block img,
+.text-block ul,li{
+  vertical-align: middle;
+}
+    /**/

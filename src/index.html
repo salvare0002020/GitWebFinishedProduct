@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>タイトル</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>６班</h1>
+        
+    <h1>
+        グループ６のみんなのページです<br>
+        メンバー一覧<br>
+        ・池田<br>
+        ・島田<br>
+        ・妹尾<br>
+        ・平松<br>
+        ・西田<br>
+    </h1>
+    <h2>
+        <li><a href="ikeda.html">池田ページ</a></li>
+        <li><a href="shimada.html">島田ページ</a></li>
+        <li><a href="senoukoutarou.html">妹尾ページ</a></li>
+        <li><a href="hiramatu.html">平松ページ</a></li>
+        <li><a href="Nishida.html">西田ページ</a></li>
+    </h2>
+    
+    <!-- クリック数表示 -->
+    <div class="ClickMe">
+      <button id="clickButton">Click Me</button>
+      <p id="clickCount">クリックした数: 0</p>
+      <button id="resetButton">reset</button>
+    </div>
+    
+    <!-- 時計表示 -->
+    <div id="clock"></div>
+
+    <!-- おみくじ -->
+    <div class="fortune-wrapper">
+      <h1>おみくじ</h1>
+      <button id="fortuneButton">おみくじを引く</button>
+      <p id="fortune-result"></p>
+    </div>
+
+    <!-- 背景色変更 -->
+    <div class="ChangeColor">
+      <button id="changeColorButton">背景色変更</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

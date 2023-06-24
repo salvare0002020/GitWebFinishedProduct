@@ -1,0 +1,177 @@
+*/
+
+
+
+/* ページ全体のCSS指定 */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color:#990099;
+}
+#container{
+	width:760px;
+	margin:auto;
+	background-image:url("ダウンロード2.jpg");
+	border-left:7px solid #FF9933;
+	border-right:7px solid #FF9933;
+}
+
+/* ヘッダーのCSS指定 */
+header{
+	height:150px;
+	background-image:url("images (1).jpg");	
+}
+#title-words{
+	padding: top 80px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:80pt;
+	font-weight:bold;
+}
+
+/* リンクメニューのCSS指定 */
+nav{
+	background-image:url("ダウンロード.png");
+	height:34px;
+}
+nav ul{			/* li項目を横方向に均等割付（項目数可変） */
+	list-style-type:none;
+	margin-bottom:0px;
+	height:30px;
+	text-align:justify;
+}
+nav ul:after{
+	content:"";
+	width:100%;
+	line-height:0px;
+	display:inline-block;
+	height:0px;
+	margin-bottom:0px;
+}
+nav li{
+	height:30px;
+	padding:4px;
+	text-align:center;
+	display:inline-block;
+}
+nav a{
+	color:#FFFFFF;
+	font-size:12pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+nav a:hover{
+	color:#FFFF00;
+}
+
+/* メインコンテンツのCSS指定 */
+#main{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:25pt;
+	padding:30px;
+	color:#FFFFFF;
+	
+}
+
+/* 各構成要素のCSS指定 */
+/* 見出し関連 */
+h1{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:35pt;
+	color:#FFFFFF;
+	background-color:#FF3333;
+	border-radius:5px;
+	border-left:solid 10px #000000;
+	border-right:solid 10px #000000;
+	padding:5px 7px;
+	margin-bottom:30px;
+	box-shadow:4px 4px 10px #999999;
+	letter-spacing:1pt;
+}
+
+h2{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:24pt;
+	color:#FFFFFF;
+	background-color:#FF3333;
+	border-radius:5px;
+	border-left:solid 10px #000000;
+	border-right:solid 10px #000000;
+	padding:5px 7px;
+	margin-bottom:30px;
+	box-shadow:4px 4px 10px #999999;
+	letter-spacing:1pt;
+}
+
+h3{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:24pt;
+	color:#FFFFFF;
+	background-color:#FF3333;
+	border-radius:5px;
+	border-left:solid 10px #000000;
+	border-right:solid 10px #000000;
+	padding:5px 7px;
+	margin-bottom:30px;
+	box-shadow:4px 4px 10px #999999;
+	letter-spacing:1pt;
+}
+
+h4{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:24pt;
+	color:#FFFFFF;
+	background-color:#FF3333;
+	border-radius:5px;
+	border-left:solid 10px #000000;
+	border-right:solid 10px #000000;
+	padding:5px 7px;
+	margin-bottom:30px;
+	box-shadow:4px 4px 10px #999999;
+	letter-spacing:1pt;
+}
+/* リンク関連 */
+a:link{
+	text-decoration:none;
+	color:#00CC00;
+}
+a:visited{
+	color:#990099;
+}
+a:hover{
+	color:#FF0000;
+}
+
+/* 表関連 */
+table{
+	border-collapse:collapse;
+}
+caption{
+	caption-side:bottom;
+	font-weight:bold;
+	padding-top:5px;
+	text-align:right;
+	font-size:11pt;
+}
+th,td{
+	border:solid 2px #000000;
+	padding:5px;
+}
+td{
+	text-align:left;
+}
+thead{
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+}
+
+/* フッターのCSS指定 */
+footer{
+	background-color:#000000;
+	padding:10px 0px;
+	font-size:10pt;
+	text-align:center;
+	color:#FFFFFF;
+}
